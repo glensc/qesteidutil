@@ -121,7 +121,7 @@ QSmartCard::ErrorType QSmartCard::Private::handlePinResult(QPCSCReader *reader, 
 	case 0x6400: // Timeout (SCM)
 	case 0x6401: return QSmartCard::CancelError; // Cancel (OK, SCM)
 	case 0x6402: return QSmartCard::DifferentError;
-	case 0x6403: return QSmartCard::LenghtError;
+	case 0x6403: return QSmartCard::LengthError;
 	case 0x6983: return QSmartCard::BlockedError;
 	case 0x6985: return QSmartCard::OldNewPinSameError;
 	case 0x6A80: return QSmartCard::OldNewPinSameError;

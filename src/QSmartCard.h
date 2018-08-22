@@ -118,7 +118,7 @@ public:
 		BlockedError,
 		CancelError,
 		DifferentError,
-		LenghtError,
+		LengthError,
 		ValidateError,
 		OldNewPinSameError
 	};

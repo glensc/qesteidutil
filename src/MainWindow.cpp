@@ -177,7 +177,7 @@ bool MainWindowPrivate::validateCardError( QSmartCardData::PinType type, int fla
 		break;
 	case QSmartCard::DifferentError:
 		showWarning( tr("New %1 codes doesn't match").arg( QSmartCardData::typeString( type ) ) ); break;
-	case QSmartCard::LenghtError:
+	case QSmartCard::LengthError:
 		showWarning(tr("%1 length has to be between %2 and 12").arg(QSmartCardData::typeString(type)).arg(QSmartCardData::minPinLen(type))); break;
 	case QSmartCard::OldNewPinSameError:
 		showWarning( tr("Old and new %1 has to be different!").arg( QSmartCardData::typeString( type ) ) );
